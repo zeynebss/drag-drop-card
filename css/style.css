@@ -1,0 +1,104 @@
+:root {
+  --first-color: #6f4518;
+  --first-color-light:#e7bc91;
+  --first-color-lighten:#f3d5b5;
+  --body-font:Georgia, 'Times New Roman', Times, serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: var(--body-font);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: var(--first-color-lighten);
+}
+
+* .drop {
+  height: 100vh;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -ms-grid;
+  display: grid;
+}
+
+* .drop .drop-container {
+  width: 90%;
+  margin: auto;
+  display: -ms-grid;
+  display: grid;
+  row-gap: 1rem;
+  padding: 1rem;
+  border-radius: 6px;
+  -webkit-box-shadow: 3px 3px 12px #E1E1E1;
+          box-shadow: 3px 3px 12px #E1E1E1;
+  border: .3px solid #432818;
+}
+
+* .drop .drop-container .drop-card {
+  width: 360px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: .75rem 1.25rem .75rem .75rem;
+  background-color: var(--first-color-lighten);
+  border-radius: 2.5rem;
+  border: 1px solid #432818;
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+
+* .drop .drop-container .drop-card .drop-data {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+* .drop .drop-container .drop-card .drop-data img {
+  max-width: 100%;
+  min-height: auto;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+
+* .drop .drop-container .drop-card .drop-data .drop-text h1 {
+  font-size: 20px;
+  color: var(--first-color);
+  margin: 0;
+}
+
+* .drop .drop-container .drop-card .drop-data .drop-text span {
+  font-size: 17px;
+  color: var(--first-color);
+}
+
+* .drop .drop-container .drop-card .drop-data .drop-icon a i {
+  margin: 0 .375rem;
+  color: var(--first-color);
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+* .drop .drop-container .drop-card .drop-data .drop-icon a i:hover {
+  color: #432818;
+}
+
+* .drop .drop-container .sortable-chosen {
+  -webkit-box-shadow: 8px 8px 32px #E1E1E1;
+          box-shadow: 8px 8px 32px #E1E1E1;
+}
+
+* .drop .drop-container .sortable-drag {
+  opacity: 0;
+}
+/*# sourceMappingURL=style.css.map */
